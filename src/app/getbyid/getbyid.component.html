@@ -1,0 +1,12 @@
+<h1>Detailed View</h1>
+
+<div *ngIf="list" class="container mt-4">
+    <div class="card">
+      <div class="card-body">
+        <p>ID: {{list._id}}</p>
+        <p>Description: {{list.description}}</p>
+        <p class="btn btn-primary" (click)="goBack()">Back</p>
+      </div>
+    </div>
+  </div>
+  

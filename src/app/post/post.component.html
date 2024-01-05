@@ -1,0 +1,13 @@
+<div class="container mt-4">
+    <h1>ADD TO DO</h1>
+  
+    <form [formGroup]="formOne">
+      <div class="mb-3">
+        <label for="description" class="form-label" >Description:</label>
+        <input type="text" id="description" class="form-control" formControlName="description" required>
+      </div>
+  
+      <button class="btn btn-success" (click)="posData()">Add</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,16 @@
+<div class="container">
+
+
+    <img src="assets/pugazh.jpg" alt="">
+    <h1>TO DO List</h1>
+
+  <button class="btn btn-primary" (click)="add()">Add Task</button>
+
+  <div *ngFor="let l of list" class="mt-3 border p-3">
+    <p>{{ l.description }}</p>
+
+    <button class="btn btn-warning me-2" (click)="update(l._id)">Edit</button>
+    <button class="btn btn-info me-2" (click)="view(l._id)">View</button>
+    <button class="btn btn-danger" (click)="del(l._id)">Delete</button>
+  </div>
+</div>
